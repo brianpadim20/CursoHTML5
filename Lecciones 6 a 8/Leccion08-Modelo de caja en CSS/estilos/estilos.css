@@ -1,0 +1,22 @@
+h1{
+    background-color: bisque;
+    text-align: center;
+    color: brown;
+    padding: 15px;
+    padding: 15px;
+    border: 10px solid powderblue;
+    margin: 50px;
+    color: blue;
+
+}p{
+ /*box model individuales*/
+   color: white;
+   background-color: crimson;
+   border: 10px solid powderblue;
+   /*margin-top: 40px;
+   margin-right: 10px;
+   margin-left: 10px;
+   margin-bottom: 20px;*/
+   margin: auto 40px 10px 20px 10px;/*Parte superior, derecho, inferior, izquierdo*/
+   text-align: center; /*Sirve para centrar el texto */
+}

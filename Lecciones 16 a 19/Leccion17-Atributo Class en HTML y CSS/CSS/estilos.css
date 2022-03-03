@@ -1,0 +1,22 @@
+* /*Se usa asterisco para decir que los estilos que se van a definir aplicarán a toda la página
+*/{
+    margin: 0;
+    padding: 0;
+
+}.tarjeta/*Clase en CSS*/{
+    border: 10px solid #560bad;
+    text-align: center;
+    background-color: #f1faee;
+    margin: 15px 580px;
+    padding: 15px;
+}h1{
+    color: #F72585;
+    text-align: center;
+    margin: 15px;
+}h2{
+    color: #3f37c9;
+}span{
+    color: #F72585;
+}p {
+    color: #457b9d;
+}

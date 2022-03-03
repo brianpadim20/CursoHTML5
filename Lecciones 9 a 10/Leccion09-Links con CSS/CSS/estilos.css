@@ -1,0 +1,14 @@
+h1{
+    color: #457b9d;
+}a:link{
+    color:#fb8500;
+}a:visited{
+    color: #219ebc;
+    text-decoration: none;
+}a:hover /*Cuando se para encima del link*/{
+    color: #8ecae6;
+    text-decoration: none;
+}a:active{
+    color: #023047;
+    text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+ol{
+    list-style: none;/*Se pone ninguno ya que se van a personalizar*/
+    counter-reset: contador;
+}ol li{
+    counter-increment: contador;
+}ol li::before/*Los dos puntos son un selector, en este caso se selecciona antes
+que vaya a mostrar la información de la lista.*/{
+    content: 'Curso 'counter(contador) ') ';
+    color: #ff6f00
+
+}ol li::after{
+    content:'.';
+}

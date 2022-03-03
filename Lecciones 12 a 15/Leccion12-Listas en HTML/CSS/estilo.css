@@ -1,0 +1,4 @@
+ul{
+    list-style-type: circle; /*Lo hace como un circulo y no un disco*/
+    /*también se puede usar un cuadrado u otros elementos*/
+}

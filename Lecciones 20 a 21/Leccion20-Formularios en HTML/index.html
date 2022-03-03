@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <form method="get">
+        <!--El metodo post es para que la información no se vea en el URL, si se usa el método get 
+            si se verá en el URL y se podrá ver la información sensible.
+
+            action es para decir cual URL o servidor es la que va a procesar.
+            
+            El método target puede ser: _self para que la respuesta se visualice dentro de la misma
+            ventana que se está trabajando. pero si se usa _blank, la respuesta se verá dentro de
+            una nueva ventana.
+
+            Autocomplete es un atributo para querer si se deja que los formularios se auto completen.
+            Se puede dejar on, si se desea que el auto completado se deje.
+            Si no desea que el navegador tenga auto completado, simplemente se pone off
+    -->
+    <fieldset>
+        <legend>Datos personales:</legend>
+
+        <label for="idPersona">id Persona:</label>
+        <input type="text" id="idPersona" name="idPersona " required="true"
+        readonly="true" disabled=true value="100"><br/><!--Si se pone disabled, no se trabajará de 
+        lado del servidor-->
+
+        <!--Parámetros ocultos-->
+        <input type="hidden" id= "sistema" name="sistema" value="SAP"/>
+
+        <label for="nombre">Nombre:</label><br/>
+        <input type="text" id="nombre" name="nombre" 
+        placeholder="Ingresa tu(s) nombre(s)" required="true"/><br/>
+
+        <label for="apellidos">Apellidos:</label><br/>
+        <input type="text" id="apellidos" name="apellido"
+        placeholder="Ingresa tu(s) apellido(s)" required= "true"/><br/>
+
+        <label for="email">email:</label><br>
+        <input type="email" id="email" name="email" placeholder="mail@mail.com"><br/>
+
+        <label for="edad">Edad: </label><br/>
+        <input type="number" name="edad" id="edad"><br/>
+
+        <label for="estatura">Estatura: </label><br/>
+        <input type="estatura" name="estatura" id="estatura" step="any"><br/>
+
+        <label for="password">Contraseña:</label><br/>
+        <input type="password" id="password" name="password" required= "true"/><br/>
+
+        <label">Género</label><br/>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label><br/>
+
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br/>
+        
+        <label for="Género de música favorita"></label><br/>
+        <input type="checkbox" id="rock" name="musica" value="rock">
+        <label for="rock">Rock</label><br/>
+
+        <input type="checkbox" id="jazz" name="musica" value="jazz">
+        <label for="jazz">Jazz</label><br/>
+        
+        <input type="checkbox" name="musica" id="reggae" value="reggae">
+        <label for="reggae">Reggae</label><br/><br/>
+
+        <label for="autos">Marca de auto favorita:</label><br/>
+        <select name="autos" id="autos"><!--Para seleccionar mas de una opción, en select se 
+        el atributo: multiple = "true", así dejará seleccionar mas de un elemento-->
+            <option value="volvo">Volvo</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">audi</option>
+        </select><br/><br/>
+
+        <label for="comentario">Comentarios: </label><br/>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" 
+        placeholder="Ingresa tus comentarios"></textarea><br/><br/>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </fieldset>
+    </form>
+
+</body>
+</html>

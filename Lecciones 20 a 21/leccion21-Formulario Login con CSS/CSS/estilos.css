@@ -1,0 +1,45 @@
+html{
+    height: 100%;
+}body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#7209b7, #3f37c0);
+}.contenedor{
+    margin: 50px auto;/*auto es para que se centre en el lado izquiero y derecho*/
+    width: 400px;/*Ancho*/
+    padding: 30px;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+}.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #4cc9f0;
+    text-align: center;
+}.contenedor .elemento label /*Se busca dentro de contenedor, allí se pondrá
+la clase de tipo elemento, y dentro de la clase de tipo elemento solo se verá afectado
+el label
+
+las label que estén en el div de elemento y a su vez en el div de contenedor
+
+Esto son selectores, selecciona contenedor, luego la clase de elemento y finalmente
+el elemento*/{
+    color: white;
+}.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background: transparent; 
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+}.contenedor .elemento input[type="submit"]{
+    background-color: #f72585;
+    border: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+}

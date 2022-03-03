@@ -1,0 +1,26 @@
+table/*Función para que la tabla ocupe toda la pantalla*/{
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse; 
+    padding: 5px;
+    /*border-spacing: 5px*/ /*Sirve para aumentar el espacio entre los bordes de la tabla CSS*/
+
+}td{
+    text-align: center;
+}/*th{
+    text-align: left;
+}*/caption{
+    color: #e63946;
+    font-family: 'Trocchi', serif;
+    line-height: 70px;
+}th{
+    color: #f1faee;
+    background-color: #1d3557;
+}tr:nth-child(even)/*renglones pares*/{
+    background-color: #f1faee;
+}tr:nth-child(odd)/*Renglones impares*/{
+    background-color: #a8dadc;
+}
